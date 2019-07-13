@@ -1,20 +1,16 @@
 <%= form_for @group do |form| %>
 
-<% if @group.errors.any? %>
-<ul>
-    <% @group.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-    <% end %>
-</ul>
-<% end %>
+<div class="form-group">
+    <div class="form-group string optional">
+        <%= form.label "標題", :class => "string optional control-label" %>
+        <%= form.text_field :title, :class => "string optional form-control" %>
+    </div>
 
-標題
-<%= form.text_field :title %>
-<br>
-敘述
-<br>
-<%= form.text_area :description %>
-<br>
+    <div class="form-group string optional">
+        <%= form.label "說明", :class => "string optional control-label" %>
+        <%= form.text_area :description, :class => "string optional form-control" %>
+    </div>
 
-<%= form.submit "Submit", :disable_with => 'Submiting...' %>
+</div>
+    <%= form.submit "送出", class: "btn btn-primary", data: { disable_with: "Submiting..." } %>
 <% end %>
