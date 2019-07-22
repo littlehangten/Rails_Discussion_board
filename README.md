@@ -1,24 +1,5 @@
-# README
+自己實做一個Rails的討論版
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+裡面有使用Bootstrap及Devise等gem
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+會員可以使用新增及修改文章
